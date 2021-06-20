@@ -1,0 +1,68 @@
+<aside class="sidebar">
+    <div class="brand">
+        <a routerLink="/" class="flex">
+            <div>
+                <img src="./assets/images/logo-ct.png" alt="">               
+            </div>
+            <div>Soft UI Dashboard</div>
+        </a>
+        <button mat-icon-button class="mobile__sidebar--close sidebar__close">
+            <i class="fa fa-close sidebar__close"></i>
+        </button>
+    </div>
+    <div class="cross"></div>
+    <div>
+        <ol>
+            <li>
+                <a class="sidebar__close" routerLink="/soft-ui-dashboard/pages/dashboard" routerLinkActive="active">
+                    <div class="sidebar__close">
+                        <div class="squard sidebar__close">
+                            <i class="fa fa-tachometer sidebar__close"></i>
+                        </div>
+                        <div class="sidebar__close">
+                            Dashboard
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="sidebar__close" routerLink="/soft-ui-dashboard/pages/news" routerLinkActive="active">
+                    <div class="sidebar__close">
+                        <div class="squard sidebar__close"> 
+                            <i class="fa fa-newspaper-o sidebar__close"></i>
+                        </div>
+                        <div class="sidebar__close">
+                            News
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="sidebar__close" routerLink="/soft-ui-dashboard/pages/user" routerLinkActive="active">
+                    <div class="sidebar__close">
+                        <div class="squard sidebar__close">
+                            <i class="fa fa-user sidebar__close"></i>
+                        </div>
+                        <div class="sidebar__close">
+                            Users
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ol>
+    </div>
+    <div class="doc__bg">
+        <div class="doc__bg--zIndex">
+            <div>
+                <div class="squard">
+                    <i class="fa fa-diamond"></i>
+                </div>
+            </div>
+            <div>Need help?</div>
+            <div>Please check our docs</div>
+            <div>
+                <button mat-button>DOCUMENTATION</button>
+            </div>
+        </div>
+    </div>
+</aside>

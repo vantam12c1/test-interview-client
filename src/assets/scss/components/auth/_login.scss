@@ -1,0 +1,100 @@
+.login {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    &__card {
+        width: 40%;
+        padding: 0 60px;
+        margin-top: 100px;
+        box-sizing: border-box;
+    }
+    .title {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 35px;
+        @include textLinearBlue;
+    }
+    .desc {
+        color: $c-grey-8e;
+        margin-bottom: 40px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95vh;
+    }
+    form {
+        width: 100%;
+        & > div {
+            margin: 20px 0;
+        }        
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        mat-slide-toggle label {
+            display: flex;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        input {
+            width: 100%;
+            padding: 10px;            
+            box-sizing: border-box;
+            border: 1px solid #a3a2a3;
+            outline: none;
+            border-radius: 4px;    
+            &::placeholder {
+                font-size: 12px;
+                color: #a3a2a3;
+            }    
+        }
+        button {
+            @include bgLinearBlue;
+            width: 100%;
+            height: 40px;
+            color: #fff;
+            font-size: 12px;
+            margin: {
+                top: 30px;
+                bottom: 20px;
+            };
+        }        
+    }
+    .direction {        
+        @include textLinearBlue;
+    }
+    ol {       
+        position: relative;
+        z-index: 2; 
+        display: flex;
+        justify-content: space-between;
+        max-width: 60%;
+        width: 100%;
+        margin: 0 auto;       
+        a {
+            color: #8392ab;
+        }
+    }
+    .bg__right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 40%;
+        border-bottom-left-radius: 18px;
+        overflow: hidden;
+    }
+    .bg__image {
+        position: relative;
+        right: -10%;
+        background-image: url('../../../images/curved-images/curved6.jpg');
+        width: 100%;
+        height: 95vh;
+        transform: skewX(-10deg);
+        border-bottom-left-radius: 18px;
+    }
+}

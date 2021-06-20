@@ -1,0 +1,27 @@
+<div class="news table">
+    <h3 class="title">IT News</h3>
+    <button class="btn__add" mat-button (click)="onCreate()">Add News</button>
+    <div class="table__scroll">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>SLUG</th>            
+                <th>CONTENT</th>
+            </tr>
+            <tr *ngFor="let news of arrNews; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{news.title}}</td>
+                <td>{{news.slug}}</td>
+                <td>
+                    <div id="content" [innerHtml]="news.content"></div>
+                </td>
+                <td class="actions">
+                    <button><i class="fa fa-info-circle"></i></button>
+                    <button (click)="onEdit(news)"><i class="fa fa-pencil"></i></button>
+                    <button (click)="onDelete(news._id)"><i class="fa fa-trash-o"></i></button>
+                </td>
+            </tr>       
+        </table>
+    </div>
+</div>

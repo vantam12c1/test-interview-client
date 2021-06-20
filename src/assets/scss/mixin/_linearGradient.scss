@@ -1,0 +1,16 @@
+@mixin textLinearTwoColor($direction, $c-one, $c-two) {
+    background: linear-gradient($direction, $c-one, $c-two);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin textLinearBlue {
+    background: linear-gradient(310deg, $c-blue-ff, $c-blue-fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin bgLinearPurple {
+    background: linear-gradient(310deg,#141727,#3a416f);
+}
+@mixin bgLinearBlue {
+    background: linear-gradient(310deg, $c-blue-ff, $c-blue-fd);   
+}

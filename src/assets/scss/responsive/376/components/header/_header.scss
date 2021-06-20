@@ -1,0 +1,24 @@
+.header {
+    .topbar {
+        flex-wrap: wrap;
+    }
+    .topbar__right {
+        margin: 10px 0;
+        input {
+            max-width: 120px;
+        }
+        .mat-icon-button {
+            width: 30px;
+            height: 30px;
+            line-height: 30px
+        }
+        .menu {
+            padding: 0;
+            min-width: 30px;
+            line-height: 30px;
+        }
+    }  
+    #currentUser {
+        display: none;
+    }
+}

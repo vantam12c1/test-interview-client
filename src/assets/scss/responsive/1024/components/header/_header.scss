@@ -1,0 +1,18 @@
+.mobile__bars {
+    display: none !important;
+}
+.header .topbar__right input {
+    max-width: 220px;
+}
+#currentUser {
+    display: block !important;
+}
+.header .topbar__right .menu {
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+}
+.header .menu .ng-star-inserted {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,18 @@
+@media (max-width: 375px) {
+    @import './375/index';
+}
+@media (min-width: 376px) {
+    @import './376/index';
+}
+@media (min-width: 425px) {
+    @import './425/index';
+} 
+@media (min-width: 768px) {
+    @import './768/index';
+}
+@media (min-width: 1024px) {
+    @import './1024/index';
+}
+@media (min-width: 1400px) {
+    @import './1400/index';
+}

@@ -1,0 +1,13 @@
+.sidebar {
+    left: -300px;
+    background-color: #fff;
+    transition: all .4s;
+    &.active {
+        left: 0;
+        transition: all .4s;
+    }
+}
+.header, .main {
+    width: 100%;
+    left: 0;
+}

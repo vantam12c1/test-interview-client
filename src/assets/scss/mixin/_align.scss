@@ -1,0 +1,19 @@
+@mixin centerHeight($height, $textAlign: center) {
+    height: $height;
+    line-height: $height;
+    text-align: $textAlign;
+}
+@mixin centerPosition($pos) {
+    position: absolute;
+    @if ($pos == "both") {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if ($pos == "top") {
+        top: 50%;
+        transform: translateY(-50%);
+    } @else {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

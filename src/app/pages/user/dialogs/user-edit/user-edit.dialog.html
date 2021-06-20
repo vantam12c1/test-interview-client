@@ -1,0 +1,53 @@
+<div class="dialog__edit">
+    <h2 matDialogTitle>Edit</h2>
+    <mat-dialog-content>
+        <form [formGroup]="formEdit" (ngSubmit)="onSubmitted()">
+            <div class="flex">
+                <div>
+                    <mat-form-field>
+                        <mat-label>Firstname</mat-label>
+                        <input matInput placeholder="Firstname" formControlName="firstname">                        
+                    </mat-form-field>
+                    
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Lastname</mat-label>
+                        <input matInput placeholder="Lastname" formControlName="lastname">                        
+                    </mat-form-field>
+                </div>               
+                <div>
+                    <mat-form-field>
+                        <mat-label>Account</mat-label>
+                        <input matInput placeholder="Account" formControlName="account">
+                        <mat-error *ngIf="formEdit.controls.account.invalid">
+                            {{checkAccount()}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="password">
+                        <mat-error *ngIf="formEdit.controls.password.invalid">
+                            {{checkPassword()}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field>
+                        <mat-label>Phone number</mat-label>
+                        <input matInput placeholder="Phone number" formControlName="phone">                    
+                        <mat-error *ngIf="formEdit.controls.phone.invalid">
+                            {{checkPhone()}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button class="btn__update" mat-flat-button (click)="onSubmitted()" [disabled]="formEdit.invalid">Update</button>
+        <button mat-flat-button mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+</div>

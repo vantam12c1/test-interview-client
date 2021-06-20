@@ -1,0 +1,25 @@
+<div class="dialog__create dialog__edit">
+    <h2 class="title" mat-dialog-title>News Create</h2>
+    <mat-dialog-content>
+        <form [formGroup]="formCreate" (ngSumit)="onCreate()">
+            <div>
+                <mat-form-field>
+                    <mat-label>Title</mat-label>
+                    <input matInput type="text" placeholder="Please enter title" formControlName="title" />
+                </mat-form-field>
+            </div>   
+            <div id="editor">
+                <ck-editor name="editor1" skin="moono-lisa" language="en" [fullPage]="true" formControlName="content"></ck-editor>
+            </div>             
+        </form>        
+        <div>
+            <mat-dialog-actions align="end">
+                <button class="btn__update" mat-button (click)="onCreate()" [disabled]="formCreate.invalid">Save</button>
+                <button mat-button mat-dialog-close>Close</button>
+            </mat-dialog-actions>            
+        </div>
+    </mat-dialog-content>    
+</div>
+
+
+

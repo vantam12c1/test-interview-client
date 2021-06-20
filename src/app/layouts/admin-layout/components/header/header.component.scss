@@ -1,0 +1,34 @@
+.header {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__right {
+            display: flex;
+            align-items: center;
+            .search {
+                position: relative;
+                i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 20px;                    
+                }
+            }
+            input {
+                height: 30px;
+                padding: 5px 15px 5px 40px;
+                box-sizing: border-box;
+                border: 1px solid #67748e;
+                border-radius: 6px;
+                outline: none;
+            }
+        }
+    }
+    .page__current {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

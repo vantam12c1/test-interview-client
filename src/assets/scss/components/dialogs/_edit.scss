@@ -1,0 +1,10 @@
+.dialog__edit {   
+    mat-form-field {
+        width: 100%;
+    }
+    mat-dialog-content {
+        form * {
+            font-size: 14px;
+        }
+    }
+}

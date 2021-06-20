@@ -1,0 +1,77 @@
+<div class="users table">
+    <h3 class="title">Users</h3>
+    <div class="table__scroll">        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>FULLNAME</th>
+                <th>ACCOUNT</th>            
+                <th>EMAIL</th>
+                <th>PHONE</th>
+                <th>PASSWORD</th>
+            </tr>
+            <ng-container *ngIf="role == 'Admin'; else elseNotAdmin">
+                <ng-container *ngIf="arrUser">
+                    <tr *ngFor="let user of arrUser">
+                        <td>{{user._id}}</td>
+                        <td>{{user.fullname()}}</td>
+                        <td>{{user.account}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.phone}}</td>
+                        <td class="actions" id="password">
+                            <ng-container *ngIf="!isShowPw; else elseIsShowPw">
+                                <span>*******</span>
+                            </ng-container>
+                            <ng-template #elseIsShowPw>
+                                <span>{{user.password}}</span>
+                            </ng-template>
+                            
+                            <button (click)="isShowPw = !isShowPw">
+                                <ng-container *ngIf="!isShowPw; else elseIsShowEye">
+                                    <i class="fa fa-eye"></i>
+                                </ng-container>
+                                <ng-template #elseIsShowEye>
+                                    <i class="fa fa-eye-slash"></i>
+                                </ng-template>                    
+                            </button>
+                        </td>    
+                        <td class="actions">                
+                            <button (click)="onEdit(user)"><i class="fa fa-pencil"></i></button>
+                            <button (click)="onDelete(id)"><i class="fa fa-trash-o"></i></button>
+                        </td>
+                    </tr> 
+                </ng-container>
+            </ng-container>
+            <ng-template #elseNotAdmin>
+                <tr *ngIf="user">
+                    <td>{{user._id}}</td>
+                    <td>{{user.fullname()}}</td>
+                    <td>{{user.account}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.phone}}</td>
+                    <td class="actions" id="password">
+                        <ng-container *ngIf="!isShowPw; else elseIsShowPw">
+                            <span>*******</span>
+                        </ng-container>
+                        <ng-template #elseIsShowPw>
+                            <span>{{user.password}}</span>
+                        </ng-template>
+                        
+                        <button (click)="isShowPw = !isShowPw">
+                            <ng-container *ngIf="!isShowPw; else elseIsShowEye">
+                                <i class="fa fa-eye"></i>
+                            </ng-container>
+                            <ng-template #elseIsShowEye>
+                                <i class="fa fa-eye-slash"></i>
+                            </ng-template>                    
+                        </button>
+                    </td>    
+                    <td class="actions">                
+                        <button (click)="onEdit()"><i class="fa fa-pencil"></i></button>
+                        <button (click)="onDelete()"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                </tr> 
+            </ng-template>      
+        </table>
+    </div>
+</div>

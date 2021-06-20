@@ -1,0 +1,54 @@
+.table {
+    padding: 40px 0 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.05);
+    &__scroll {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .title {
+        font-weight: 500;
+        padding: 0 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            text-align: left;
+            color: #2d2d2e;
+            font-size: 12px;
+            padding: 10px 20px;
+        }
+        td {           
+            padding: 10px 20px;
+            white-space: nowrap;
+            border: {
+                top: 1px solid #e5e6e7;
+                bottom: 1px solid #e5e6e7;                
+            }            
+        }
+        tr {
+            &:last-child td {
+                border-bottom: none;             
+            }
+        }
+    }
+    .actions {
+        button {
+            margin: 0 5px;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+    #password {
+        span {
+            margin-right: 10px;
+        }
+    }
+}

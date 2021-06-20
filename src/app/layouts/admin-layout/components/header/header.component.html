@@ -1,0 +1,42 @@
+<header class="header">
+    <div class="topbar">
+        <div class="topbar__left">
+            <div class="breadcrumb">
+                <span class="breadcrumb__item breadcrumb__item--prev">Pages</span>
+                <span>/</span>
+                <span class="breadcrumb__item breadcrumb__item--curr">Dashboard</span>
+            </div>
+            <div class="page__current">Dashboard</div>
+        </div>      
+        <div class="topbar__right">
+            <div class="search">
+                <input type="text" placeholder="Type here...">
+                <i class="fa fa-search"></i>
+            </div>            
+            <div>
+                <button mat-icon-button>
+                    <i class="fa fa-cog"></i>
+                </button>
+            </div>
+            <div>
+                <button mat-icon-button class="mobile__bars">
+                    <i class="fa fa-bars mobile__bars"></i>
+                </button>
+            </div>
+            <div>
+                <button mat-icon-button>
+                    <i class="fa fa-bell"></i>
+                </button>
+            </div>
+            <div>
+                <button class="menu" mat-button [matMenuTriggerFor]="menu">
+                    <span *ngIf="currentUser"><i class="fa fa-user"></i> <span id="currentUser">{{currentUser.fullname()}}</span></span>                   
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Profile</button>
+                    <button mat-menu-item (click)="onLogout()">Sign out</button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</header>

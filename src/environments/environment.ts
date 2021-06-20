@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // URL_API: 'http://localhost:3000',
+  URL_API: 'https://test-interview-api.herokuapp.com',
+  cookiesKey: {
+    accessToken: 'thisIsKeyAcCessToKen',
+    tokenType: 'THisIskEytokeNType',   
+  }
 };
 
 /*

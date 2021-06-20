@@ -1,0 +1,8 @@
+.sidebar {
+    left: 0;   
+}
+.header, .main {    
+    width: calc(100% - 300px);
+    left: 300px;
+    padding: 20px 40px 20px 20px;   
+}

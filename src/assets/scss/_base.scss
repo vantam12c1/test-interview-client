@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body { 
+    height: 100%;
+    background-color: $c-white-fa;
+}
+body, .mat-typography {
+    font: 400 16px/20px Roboto, "Helvetica Neue", sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+.btn__update, .btn__add {
+    background-color: green;
+    color: #fff;
+}
+.btn__delete {
+    background-color: #ff0000;
+    color: #fff
+}

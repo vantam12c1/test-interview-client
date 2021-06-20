@@ -1,0 +1,12 @@
+.breadcrumb {
+    &__item {
+        font-size: 14px;
+        &--prev {
+            color: $c-grey-8e;
+            cursor: pointer;
+        }
+    }
+    & > span:nth-child(2) {
+        margin: 0 10px;
+    }
+}

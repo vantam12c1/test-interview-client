@@ -1,0 +1,19 @@
+.login {
+    .title {
+        font-size: 35px;
+    }
+    &__card {
+        width: 40%;        
+    }
+    .bg__image {
+        right: -22%;
+    }
+    .bg__right {
+        display: block;
+        width: 30%;
+    }
+    ol {
+        @include flex(row, wrap, space-between);
+        max-width: 90%;          
+    }
+}

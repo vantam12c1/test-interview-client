@@ -1,0 +1,7 @@
+.table table td {
+    white-space: initial;
+    &.actions {
+        min-width: 100px;
+        padding-right: 0;
+    }
+}
