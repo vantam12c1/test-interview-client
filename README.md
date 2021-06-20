@@ -1,3 +1,15 @@
+# Run Application 
+
+## Về backend sử dụng Nodejs(ExpressJS) + MongoDB
+- Đã deploy lên heroku - link api(https://test-interview-api.herokuapp.com)
+- Nếu muốn sử dụng database khác thì tạo file .env thay đổi DB_URL=URL+namedatabase
+- chạy npm run dev để dùng chạy môi trường dev
+- chạy npm run start dể chạy môi trường production
+
+## Về frontend sử dụng angular
+- chạy "ng serve" sau đó mở trình duyệt chạy localhost:4200
+- file environment.ts có URL_API là link api để kết nối với backend
+
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
