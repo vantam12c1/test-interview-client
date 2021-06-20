@@ -10,6 +10,12 @@
 - chạy "ng serve" sau đó mở trình duyệt chạy localhost:4200
 - file environment.ts có URL_API là link api để kết nối với backend
 
+## Dữ liệu truy cập
+- Có thể đăng ký tài khoản mới
+- account: admin tam hoặc admin@gmail.com || password: a123456
+- account: van tam hoặc tam@gmail.com || password: 123456
+- account: adam adam hoặc adam123@gmail.com || password: adam123
+
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
