@@ -7,6 +7,8 @@
 - chạy npm run start dể chạy môi trường production
 
 ## Về frontend sử dụng angular
+- git clone https://github.com/vantam12c1/test-interview-client.git
+- npm install --save-dev @angular-devkit/build-angular (Cài lại node_modules)
 - chạy "ng serve" sau đó mở trình duyệt chạy localhost:4200
 - file environment.ts có URL_API là link api để kết nối với backend
 
